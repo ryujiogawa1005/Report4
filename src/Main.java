@@ -1,6 +1,16 @@
 public class Main {
     public static void main(String[] args){
         String str = null;
-        System.out.println(str.length());
+
+        try {
+            System.out.print(str.length());
+
+        } catch(NullPointerException e){
+            System.out.println("NullPointerExceptionが起こりました");
+            System.out.println(e.getMessage());
+
+
+        }
+
     }
 }
